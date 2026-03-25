@@ -1,0 +1,102 @@
+﻿Task 1 Commands
+python3 group8_task1.py -i genome.fasta -m 50 -o group8_task1_output.fasta
+
+
+Task 2 Commands
+With 1 missed cleavages
+python3 group8_task2.py --input_file group8_task1_output.fasta --missed_cleavages 1 --enzyme t --output_file group8_task2_output.fasta
+
+
+python3 group8_task2.py --input_file group8_task1_output.fasta --missed_cleavages 1 --enzyme l --output_file group8_task2_output_l.fasta
+
+
+python3 group8_task2.py --input_file group8_task1_output.fasta --missed_cleavages 1 --enzyme a --output_file group8_task2_output_a.fasta
+
+
+python3 group8_task2.py --input_file group8_task1_output.fasta --missed_cleavages 1 --enzyme g --output_file group8_task2_output_g.fasta
+
+
+With 0 missed cleavages
+python3 group8_task2.py --input_file group8_task1_output.fasta --missed_cleavages 0 --enzyme t --output_file group8_task2_output_nomissedcleavages.fasta
+
+
+python3 group8_task2.py --input_file group8_task1_output.fasta --missed_cleavages 0 --enzyme l --output_file group8_task2_output_nomissedcleavages_l.fasta
+
+
+python3 group8_task2.py --input_file group8_task1_output.fasta --missed_cleavages 0 --enzyme a --output_file group8_task2_output_nomissedcleavages_a.fasta
+
+
+python3 group8_task2.py --input_file group8_task1_output.fasta --missed_cleavages 0 --enzyme g --output_file group8_task2_output_nomissedcleavages_g.fasta
+
+
+Task 3 Commands
+With 1 missed cleavages output
+python3 group8_task3.py -i group8_task2_output.fasta -o group8_task3_output.txt -t mono -z 1
+
+
+python3 group8_task3.py -i group8_task2_output_l.fasta -o group8_task3_output_l.txt -t mono -z 1
+
+
+python3 group8_task3.py -i group8_task2_output_a.fasta -o group8_task3_output_a.txt -t mono -z 1
+
+
+python3 group8_task3.py -i group8_task2_output_g.fasta -o group8_task3_output_g.txt -t mono -z 1
+With 0 missed cleavages output
+python3 group8_task3.py -i group8_task2_output_nomissedcleavages.fasta -o group8_task3_output_nomissedcleavages.txt -t mono -z 1
+
+
+python3 group8_task3.py -i group8_task2_output_nomissedcleavages_l.fasta -o group8_task3_output_nomissedcleavages_l.txt -t mono -z 1
+
+
+python3 group8_task3.py -i group8_task2_output_nomissedcleavages_a.fasta -o group8_task3_output_nomissedcleavages_a.txt -t mono -z 1
+
+
+python3 group8_task3.py -i group8_task2_output_nomissedcleavages_g.fasta -o group8_task3_output_nomissedcleavages_g.txt -t mono -z 1
+
+
+Task 4 Commands
+Mode 1
+python3 group8_task4.py -i group8_task3_output_nomissedcleavages.txt -o group8_task4_output_1_nomissedcleavages.txt -m 1 --min-mz 1000 --max-mz 1500
+python3 group8_task4.py -i group8_task3_output_nomissedcleavages_l.txt -o group8_task4_output_1_nomissedcleavages_l.txt -m 1 --min-mz 1000 --max-mz 1500
+python3 group8_task4.py -i group8_task3_output_nomissedcleavages_a.txt -o group8_task4_output_1_nomissedcleavages_a.txt -m 1 --min-mz 1000 --max-mz 1500
+python3 group8_task4.py -i group8_task3_output_nomissedcleavages_g.txt -o group8_task4_output_1_nomissedcleavages_g.txt -m 1 --min-mz 1000 --max-mz 1500
+
+
+python3 group8_task4.py -i group8_task3_output.txt -o group8_task4_output_1.txt -m 1 --min-mz 1000 --max-mz 1500
+python3 group8_task4.py -i group8_task3_output_l.txt -o group8_task4_output_1_l.txt -m 1 --min-mz 1000 --max-mz 1500
+python3 group8_task4.py -i group8_task3_output_a.txt -o group8_task4_output_1_a.txt -m 1 --min-mz 1000 --max-mz 1500
+python3 group8_task4.py -i group8_task3_output_g.txt -o group8_task4_output_1_g.txt -m 1 --min-mz 1000 --max-mz 1500
+
+
+Mode 2
+python3 group8_task4.py -i group8_task3_output_nomissedcleavages.txt -o group8_task4_output_2.txt -m 2 --bin-size 100
+
+
+Mode 3
+python3 group8_task4.py -i group8_task3_output_nomissedcleavages.txt -o group8_task4_output_3.txt -m 3 --window-size 200 --step-size 50
+
+
+Mode 4
+python3 group8_task4.py -i group8_task3_output.txt -o group8_task4_output_4.txt -m 4 --mass-accuracy 0.1
+
+
+python3 group8_task4.py -i group8_task3_output_l.txt -o group8_task4_output_4_l.txt -m 4 --mass-accuracy 0.1
+
+
+python3 group8_task4.py -i group8_task3_output_a.txt -o group8_task4_output_4_a.txt -m 4 --mass-accuracy 0.1
+
+
+python3 group8_task4.py -i group8_task3_output_g.txt -o group8_task4_output_4_g.txt -m 4 --mass-accuracy 0.1
+
+
+No missed cleavages
+python3 group8_task4.py -i group8_task3_output_nomissedcleavages.txt -o group8_task4_output_4_nomissedcleavages.txt -m 4 --mass-accuracy 0.1
+
+
+python3 group8_task4.py -i group8_task3_output_nomissedcleavages_l.txt -o group8_task4_output_4_nomissedcleavages_l.txt -m 4 --mass-accuracy 0.1
+
+
+python3 group8_task4.py -i group8_task3_output_nomissedcleavages_a.txt -o group8_task4_output_4_nomissedcleavages_a.txt -m 4 --mass-accuracy 0.1
+
+
+python3 group8_task4.py -i group8_task3_output_nomissedcleavages_g.txt -o group8_task4_output_4_nomissedcleavages_g.txt -m 4 --mass-accuracy 0.1
