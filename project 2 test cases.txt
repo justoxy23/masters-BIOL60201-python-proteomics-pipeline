@@ -1,0 +1,29 @@
+python project2.py --input_csv gene_disease_mirna_dataset_subset.csv --output_tsv project2_output.tsv --quality_control_parameters 80 0.5 --generate_figures figures.png
+
+no input_csv
+python project2.py --output_tsv project2_output.tsv --quality_control_parameters 80 0.5 --generate_figures figures.png
+
+no default input_csv
+python project2.py --input_csv  --output_tsv project2_output.tsv --quality_control_parameters 80 0.5 --generate_figures figures.png
+
+no output tsv
+python project2.py --input_csv gene_disease_mirna_dataset_subset.csv --quality_control_parameters 80 0.5 --generate_figures figures.png
+
+no default output tsv
+python project2.py --input_csv gene_disease_mirna_dataset_subset.csv --output_tsv --quality_control_parameters 80 0.5 --generate_figures figures.png
+
+no qc
+python project2.py --input_csv gene_disease_mirna_dataset_subset.csv --output_tsv project2_output.tsv --generate_figures figures.png
+
+no default qc
+python project2.py --input_csv gene_disease_mirna_dataset_subset.csv --output_tsv project2_output.tsv --quality_control_parameters 0.5 --generate_figures figures.png
+
+python project2.py --input_csv gene_disease_mirna_dataset_subset.csv --output_tsv project2_output.tsv --quality_control_parameters 80 --generate_figures figures.png
+
+python project2.py --input_csv gene_disease_mirna_dataset_subset.csv --output_tsv project2_output.tsv --quality_control_parameters --generate_figures figures.png
+
+no generate figures
+python project2.py --input_csv gene_disease_mirna_dataset_subset.csv --output_tsv project2_output.tsv --quality_control_parameters 80 0.5
+
+no default for generate figures
+python project2.py --input_csv gene_disease_mirna_dataset_subset.csv --output_tsv project2_output.tsv --quality_control_parameters 80 0.5 --generate_figures
