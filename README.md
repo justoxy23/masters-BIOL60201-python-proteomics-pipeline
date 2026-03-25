@@ -69,3 +69,25 @@ These outputs collectively represent the transformation from genomic input to pr
 
 ---
 
+## Authors
+
+Task 1
+Johanna Olaniyi 
+MSc Bioinformatics and Systems Biology  
+University of Manchester
+
+Task 2
+Terenia Lee Leh Yi  
+MSc Bioinformatics and Systems Biology  
+University of Manchester
+
+Task 3
+Jia Yi Lyu
+MSc Bioinformatics and Systems Biology  
+University of Manchester
+
+Task 4
+Sam Wheeler  
+MSc Bioinformatics and Systems Biology  
+University of Manchester
+
